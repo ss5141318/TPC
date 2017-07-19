@@ -1,0 +1,170 @@
+.display-none {
+    display: none;
+}
+
+.header-custom {
+    background: radial-gradient(circle at -17% -3800%, #ffffff, #272727 85%, #000000);
+    border-bottom: 3px solid #00A4FF;
+    position: relative;
+}
+
+.footer-custom {
+    position: relative;
+    background-image: radial-gradient(circle at -6% -275%, #009fcc, #000000);
+    padding: 0.5rem;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+
+section {
+    height: calc(100vh - 116px);
+    position: relative;
+}
+
+.win {
+    height: 100%;
+    background-image: radial-gradient(circle at -6% -150%, #ffffff, #000000);
+}
+
+.temp-bg {
+    background: url(../img/temp.png);
+    background-size: cover;
+}
+
+
+/*note 主選單 hover*/
+
+.test {
+    transition: all 0.5s ease;
+    border-right: 1rem solid #00A4FF;
+}
+
+.test:hover {
+    border-right: 10rem solid #00A4FF;
+}
+
+.logo {
+    height: 50px;
+    margin: 5px 15px 5px 0px
+}
+
+.hexagonal-header {
+    background: url(../img/Hexagonal-header.svg);
+    height: 70px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tool {
+    bottom: 1rem;
+    position: absolute;
+    height: 35px;
+    right: 1rem;
+    border-radius: 100px;
+    background-image: radial-gradient(circle at -6% -1500%, #ffffff, #000000);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #00dcff;
+}
+
+
+/* note header icon */
+
+.list {
+    background-image: url(../img/icon/list.svg)
+}
+
+.theme {
+    background-image: url(../img/icon/theme.svg)
+}
+
+
+/* .earth {
+    background-image: url(../img/icon/earth.svg)
+} */
+
+.edit {
+    background-image: url(../img/icon/edit.svg)
+}
+
+.logic {
+    background-image: url(../img/icon/logic.svg)
+}
+
+.print {
+    background-image: url(../img/icon/print.svg)
+}
+
+.mail {
+    background-image: url(../img/icon/mail.svg)
+}
+
+.login {
+    background-image: url(../img/icon/logic.svg)
+}
+
+.list,
+.theme,
+.earth,
+.edit,
+.logic,
+.print,
+.mail,
+.login {
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 57px;
+}
+
+.earth {
+    background: url(../img/icon/earth.svg)no-repeat, linear-gradient(133deg, #6c9dca, #3a649a);
+}
+
+
+/* note tool icon */
+
+.info {
+    background-image: url(../img/icon/info.svg);
+    position: absolute;
+}
+
+.sign {
+    background-image: url(../img/icon/sign.svg)
+}
+
+.ruler {
+    background-image: url(../img/icon/ruler.svg)
+}
+
+.eraser {
+    background-image: url(../img/icon/eraser.svg)
+}
+
+.position {
+    background-image: url(../img/icon/postion.svg)
+}
+
+.north,
+.info,
+.sign,
+.ruler,
+.eraser,
+.position,
+.north {
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+
+/* note 覆寫calcite樣式 */
+
+.top-nav-title {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.top-nav-link:hover {
+    color: #fff;
+    background: linear-gradient(133deg, #6c9dca, #3a649a);
+}
