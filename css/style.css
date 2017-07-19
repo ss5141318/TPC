@@ -37,9 +37,8 @@ section {
     position: relative;
 }
 
-li {
-    padding: 0.5rem;
-    border: 1px solid #00A4FF;
+select {
+    border: 1px solid #a8a8a8;
 }
 
 select:hover {
@@ -47,14 +46,31 @@ select:hover {
     background-color: #00A4FF;
 }
 
-.test {
-    text-align: center;
+.select-custom {
+    margin: auto;
+    width: 78%;
+}
+
+.padding-margin-custom {
+    margin: 1.2rem 0 0 0;
 }
 
 .win {
     padding: 0.5rem;
     height: 100%;
     background-image: radial-gradient(circle at -6% -150%, #ffffff, #000000);
+}
+
+.win-custom {
+    position: relative;
+    display: block;
+    margin: 0 0 1.55rem 0
+}
+
+.selection {
+    position: relative;
+    display: block;
+    margin: 0 0 1.55rem 0;
 }
 
 .temp-bg {
@@ -188,4 +204,35 @@ select:hover {
 .top-nav-link:hover {
     color: #fff;
     background: linear-gradient(133deg, #6c9dca, #3a649a);
+}
+
+select:focus {
+    border-color: #0079c1;
+    box-shadow: none;
+}
+
+.btn-custom {
+    margin-top: 0.3rem;
+    width: 49%;
+    position: relative;
+    display: inline-block;
+    padding: 0.31rem 0.9rem;
+    color: #ffffff;
+    border: 1px solid #0079c1;
+    background-color: #0079c1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 0.9375rem;
+    line-height: 1.55rem;
+}
+
+.btn-custom:hover {
+    text-decoration: none;
+    background-color: #005e95;
+    color: #ffffff;
 }
