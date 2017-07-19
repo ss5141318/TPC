@@ -46,16 +46,15 @@
                                 <!-- extends side-nav -->
                                 <nav class="dropdown-menu modifier-class" role="menu">
                                     <!-- extends side-nav-link -->
-
                                     <a href="#" id='showLayer-Communication' class="dropdown-link" role="menu-item">通信區定位</a>
-                                    <a href="#" class="dropdown-link" role="menu-item">站所查詢定位</a>
+                                    <a href="#" id='show-station' class="dropdown-link" role="menu-item">站所查詢定位</a>
                                     <a href="#" id='show-calbe-search' class="dropdown-link" role="menu-item">光纖查詢定位</a>
 
                                     <a href="#" class="dropdown-link" role="menu-item">纜線統計</a>
                                     <a href="#" class="dropdown-link" role="menu-item">設施定位</a>
-                                    <a href="#" class="dropdown-link" role="menu-item">重要地標</a>
+                                    <a href="#" id='show-landmark' class="dropdown-link" role="menu-item">重要地標</a>
                                     <a href="#" class="dropdown-link" role="menu-item">道路定位</a>
-                                    <a href="#" class="dropdown-link" role="menu-item">交叉路口</a>
+                                    <a href="#" id='show-cross' class="dropdown-link" role="menu-item">交叉路口</a>
                                     <a href="#" class="dropdown-link" role="menu-item">座標</a>
                                     <a href="#" class="dropdown-link" role="menu-item">地址門牌地位</a>
                                 </nav>
@@ -152,6 +151,7 @@
                                 <div class="win-custom ">
                                     <div class="padding-margin-custom">
                                         <button class="btn btn-fill">查詢</button>
+
                                     </div>
                                 </div>
                                 <!--end 查詢-->
@@ -161,13 +161,54 @@
                 </div>
                 <!--end 通信區定位-->
                 <!--note 站所查詢定位-->
+                <div class=" modifier-class trailer-2 " id='asideLayer-station' data-nextopt='open'>
+                    <section class="tab-contents">
 
+                        <article class="tab-section  is-active">
+                            <div class="leader-1 ">
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">通信區:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">站所分類:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">站所名稱:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <!--end 按鈕-->
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <button class="btn-custom btn-fill">定位</button>
 
-
-
-
-
-
+                                        <button class="btn-custom btn-fill">芯線區間列表</button>
+                                        <button class="btn-custom btn-fill">站所文件</button>
+                                    </div>
+                                </div>
+                                <!--end 按鈕-->
+                            </div>
+                        </article>
+                    </section>
+                </div>
                 <!--end 站所查詢定位-->
                 <!--note 光纜查詢定位-->
                 <div class=" modifier-class trailer-2 js-tab-group" id='asideLayer-calbe-search' data-nextopt='open'>
@@ -282,6 +323,101 @@
                 </div>
 
                 <!--end 光纜查詢定位-->
+                <!--note 重要地標-->
+                <div class=" modifier-class trailer-2 " id='asideLayer-landmark' data-nextopt='open'>
+                    <section class="tab-contents">
+
+                        <article class="tab-section  is-active">
+                            <div class="leader-1 ">
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">縣市名稱:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">鄉鎮名稱:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">地標名稱:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <!--end 按鈕-->
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <button class="btn-custom btn-fill">定位</button>
+                                    </div>
+
+                                </div>
+                                <!--end 按鈕-->
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <!--end 重要地標-->
+                <!--note 交叉路口-->
+                <div class=" modifier-class trailer-2 " id='asideLayer-cross' data-nextopt='open'>
+                    <section class="tab-contents">
+
+                        <article class="tab-section  is-active">
+                            <div class="leader-1 ">
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">縣市名稱:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">鄉鎮名稱:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">道路一:</title>
+                                        <input type="text">
+                                    </div>
+                                    <div class="padding-margin-custom">
+                                        <title class="inline-block">道路二:</title>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <!--end 按鈕-->
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <button class="btn-custom btn-fill">定位</button>
+                                    </div>
+
+                                </div>
+                                <!--end 按鈕-->
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <!--end 交叉路口-->
 
 
 
@@ -336,7 +472,18 @@
                     $('#asideLayer-Communication').data('nextopt', 'open');
                 }
             });
+            //點選 - 站所查詢定位定位
+            $('#show-station').click(function() {
+                var _opt = $('#asideLayer-station').data('nextopt');
 
+                if (_opt == 'open') {
+                    $('#asideLayer-station').removeClass('display-none');
+                    $('#asideLayer-station').data('nextopt', 'close');
+                } else {
+                    $('#asideLayer-station').addClass('display-none');
+                    $('#asideLayer-station').data('nextopt', 'open');
+                }
+            });
 
 
             //點選 - 光纜速查
@@ -349,6 +496,30 @@
                 } else {
                     $('#asideLayer-calbe-search').addClass('display-none');
                     $('#asideLayer-calbe-search').data('nextopt', 'open');
+                }
+            });
+            //點選 - 重要地標
+            $('#show-landmark').click(function() {
+                var _opt = $('#asideLayer-landmark').data('nextopt');
+
+                if (_opt == 'open') {
+                    $('#asideLayer-landmark').removeClass('display-none');
+                    $('#asideLayer-landmark').data('nextopt', 'close');
+                } else {
+                    $('#asideLayer-landmark').addClass('display-none');
+                    $('#asideLayer-landmark').data('nextopt', 'open');
+                }
+            });
+            //點選 - 交叉路口
+            $('#show-cross').click(function() {
+                var _opt = $('#asideLayer-cross').data('nextopt');
+
+                if (_opt == 'open') {
+                    $('#asideLayer-cross').removeClass('display-none');
+                    $('#asideLayer-cross').data('nextopt', 'close');
+                } else {
+                    $('#asideLayer-cross').addClass('display-none');
+                    $('#asideLayer-cross').data('nextopt', 'open');
                 }
             });
         })

@@ -242,3 +242,7 @@ select:focus {
     background-color: #005e95;
     color: #ffffff;
 }
+
+.btn-fill {
+    width: 100% !important;
+}
