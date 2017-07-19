@@ -17,12 +17,42 @@
     flex: none;
 }
 
+
+/*note  工作收件 收合 hover*/
+
+
+/* 
+.test {
+    transition: all 0.5s ease;
+    border-right: 1rem solid #00A4FF;
+}
+
+.test:hover {
+    border-right: 10rem solid #00A4FF;
+}
+ */
+
 section {
     height: calc(100vh - 116px);
     position: relative;
 }
 
+li {
+    padding: 0.5rem;
+    border: 1px solid #00A4FF;
+}
+
+select:hover {
+    color: #fff;
+    background-color: #00A4FF;
+}
+
+.test {
+    text-align: center;
+}
+
 .win {
+    padding: 0.5rem;
     height: 100%;
     background-image: radial-gradient(circle at -6% -150%, #ffffff, #000000);
 }
@@ -34,15 +64,6 @@ section {
 
 
 /*note 主選單 hover*/
-
-.test {
-    transition: all 0.5s ease;
-    border-right: 1rem solid #00A4FF;
-}
-
-.test:hover {
-    border-right: 10rem solid #00A4FF;
-}
 
 .logo {
     height: 50px;
