@@ -26,27 +26,8 @@
 </head>
 
 <body>
-    <!-- Drawer -->
-    <!--     <div class="drawer drawer-left js-drawer is-active" data-drawer="top-nav" tabindex="0">
-        <nav class="drawer-nav" role="navigation">
-            <aside class="side-nav">
-                <h2 class="side-nav-title">Calcite Web</h2>
-                <a href="/" class="side-nav-link">Get Started</a>
-                <a href="/" class="side-nav-link">Type</a>
-                <a href="/" class="side-nav-link">Grid</a>
-                <a href="/" class="side-nav-link">Icons</a>
-                <a href="/" class="side-nav-link">Color</a>
-                <a href="/" class="side-nav-link">Components</a>
-                <a href="/" class="side-nav-link">Patterns</a>
-                <a href="/" class="side-nav-link">Sass</a>
-                <a href="/" class="side-nav-link">JavaScript</a>
-                <a href="/" class="side-nav-link">Layouts</a>
-            </aside>
-        </nav>
-    </div> -->
 
     <div class="wrapper ">
-        <!-- Sample HTML -->
         <header class="top-nav fade-in header-custom ">
             <div class="grid-container">
                 <div class="column-24">
@@ -66,7 +47,7 @@
                                 <nav class="dropdown-menu modifier-class" role="menu">
                                     <!-- extends side-nav-link -->
 
-                                    <a href="#" class="dropdown-link" role="menu-item">通信區定位</a>
+                                    <a href="#" id='showLayer-Communication' class="dropdown-link" role="menu-item">通信區定位</a>
                                     <a href="#" class="dropdown-link" role="menu-item">站所查詢定位</a>
                                     <a href="#" id='show-calbe-search' class="dropdown-link" role="menu-item">光纖查詢定位</a>
 
@@ -84,9 +65,7 @@
                             <a class="top-nav-link" href="#">列印</a>
                             <a class="top-nav-link" href="#">工作收件</a>
                             <a class="top-nav-link" href="#">登入</a>
-
                         </nav>
-
                     </div>
 
                     <!-- tablet and mobile sized navigation -->
@@ -110,16 +89,12 @@
             </div>
         </header>
         <section class="temp-bg">
-
-
             <!--note tool-->
             <div class="tool column-6  post-1 ">
             </div>
-
-
             <!--note 左邊欄位-->
-
-            <div class="column-8 win">
+            <div class="column-8 win-set">
+                <div class="title">功能名稱</div>
                 <!--note 圖層清單-->
                 <aside class="js-accordion accordion display-none" id='asideLayer' data-nextopt='open'>
                     <div class="accordion-section is-active">
@@ -156,6 +131,44 @@
                     </div>
                 </aside>
                 <!--end 圖層清單-->
+                <!--note 通信區定位-->
+                <div class=" modifier-class trailer-2 " id='asideLayer-Communication' data-nextopt='open'>
+                    <section class="tab-contents">
+
+                        <article class="tab-section  is-active">
+                            <div class="leader-1 ">
+                                <div class="win-custom ">
+                                    <div class="">
+                                        <title class="inline-block">通信區:</title>
+                                        <select class="inline-block  right select-custom">
+                                 <option value="">請選取</option>
+                                  <option value="">--</option>
+                                   <option value="">--</option>
+                                    <option value="">--</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <!--end 查詢-->
+                                <div class="win-custom ">
+                                    <div class="padding-margin-custom">
+                                        <button class="btn btn-fill">查詢</button>
+                                    </div>
+                                </div>
+                                <!--end 查詢-->
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <!--end 通信區定位-->
+                <!--note 站所查詢定位-->
+
+
+
+
+
+
+
+                <!--end 站所查詢定位-->
                 <!--note 光纜查詢定位-->
                 <div class=" modifier-class trailer-2 js-tab-group" id='asideLayer-calbe-search' data-nextopt='open'>
                     <nav class="tab-nav">
@@ -250,6 +263,7 @@
                                     </select>
                                     </div>
                                 </div>
+                                <!--end 查詢結果-->
                                 <div class="win-custom ">查詢結果:
                                     <div class="padding-margin-custom" style="background:#8ccede ">結果</div>
                                     <div class="padding-margin-custom">
@@ -259,8 +273,8 @@
                                         <button class="btn-custom  inline-block">連接設施</button>
                                         <button class="btn-custom right inline-block">纜線文件</button>
                                     </div>
-
                                 </div>
+                                <!--end 查詢結果-->
                             </div>
                         </article>
 
@@ -307,6 +321,24 @@
                     $('#asideLayer').data('nextopt', 'open');
                 }
             });
+
+
+
+            //點選 - 通訊區定位
+            $('#showLayer-Communication').click(function() {
+                var _opt = $('#asideLayer-Communication').data('nextopt');
+
+                if (_opt == 'open') {
+                    $('#asideLayer-Communication').removeClass('display-none');
+                    $('#asideLayer-Communication').data('nextopt', 'close');
+                } else {
+                    $('#asideLayer-Communication').addClass('display-none');
+                    $('#asideLayer-Communication').data('nextopt', 'open');
+                }
+            });
+
+
+
             //點選 - 光纜速查
             $('#show-calbe-search').click(function() {
                 var _opt = $('#asideLayer-calbe-search').data('nextopt');

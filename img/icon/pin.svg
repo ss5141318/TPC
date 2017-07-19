@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="台電" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="台電基本功能-光纖查詢定位-屬性篩選-查詢結果" transform="translate(-289.000000, -358.000000)" fill-rule="nonzero" fill="#666666">
+            <g id="光纜查詢定位-屬性篩選結果" transform="translate(10.000000, 102.000000)">
+                <path d="M286.636364,259.75 C286.636364,257.679 284.926836,256 282.818182,256 C280.709527,256 279,257.679 279,259.75 C279,261.6652 280.462924,263.2422 282.350429,263.469 L282.350429,271.429688 L283.285935,271.429688 L283.285935,263.469 C285.17344,263.2422 286.636364,261.6652 286.636364,259.75 Z" id="pin"></path>
+            </g>
+        </g>
+    </g>
+</svg>

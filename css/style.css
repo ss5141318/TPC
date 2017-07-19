@@ -17,6 +17,12 @@
     flex: none;
 }
 
+.title {
+    background-color: #00A4FF;
+    padding: 0.3875rem 0.775rem;
+    margin: -0.5rem -0.5rem 0.5rem;
+}
+
 
 /*note  工作收件 收合 hover*/
 
@@ -55,7 +61,7 @@ select:hover {
     margin: 1.2rem 0 0 0;
 }
 
-.win {
+.win-set {
     padding: 0.5rem;
     height: 100%;
     background-image: radial-gradient(circle at -6% -150%, #ffffff, #000000);
